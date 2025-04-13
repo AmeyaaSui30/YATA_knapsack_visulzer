@@ -1,0 +1,147 @@
+/* LandingPage.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+}
+
+.lp-landing-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lp-hero-section {
+    text-align: center;
+    padding: 40px 0;
+    max-width: 800px;
+}
+
+.lp-main-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.lp-subtitle {
+    font-size: 18px;
+    color: #3b82f6;
+    line-height: 1.6;
+}
+
+.lp-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.lp-option-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #3b82f6;
+}
+
+.lp-option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #1e40af;
+}
+
+.lp-icon-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.lp-blue {
+    background-color: #3b82f6;
+}
+
+.lp-green {
+    background-color: #2563eb;
+}
+
+.lp-purple {
+    background-color: #1e40af;
+}
+
+.lp-orange {
+    background-color: #1e3a8a;
+}
+
+.lp-option-icon {
+    font-size: 48px;
+}
+
+.lp-option-details {
+    padding: 20px;
+}
+
+.lp-option-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.lp-option-desc {
+    font-size: 14px;
+    color: #3b82f6;
+    line-height: 1.4;
+}
+
+.lp-footer-note {
+    text-align: center;
+    color: #1e3a8a;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .lp-options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lp-option-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lp-main-title {
+        font-size: 36px;
+    }
+
+    .lp-subtitle {
+        font-size: 16px;
+    }
+
+    .lp-option-title {
+        font-size: 18px;
+    }
+
+    .lp-option-desc {
+        font-size: 13px;
+    }
+}

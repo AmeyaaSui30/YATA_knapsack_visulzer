@@ -1,0 +1,333 @@
+/* FractionalKnapsack.css */
+
+/* Main layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    background-color: #E6F0FF;
+  }
+  
+  /* Header section */
+  .header {
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 16px;
+    background-color: #4169E1;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .header p {
+    color: white;
+    margin-top: 8px;
+  }
+  
+  /* Panel styles */
+  .panel {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    border: 1px solid #b8d0ef;
+    margin-bottom: 16px;
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .panel-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2E4172;
+  }
+  
+  .panel-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E4172;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    background-color: #4169E1;
+  }
+  
+  .btn-secondary {
+    background-color: #7B8CAD;
+  }
+  
+  .btn-success {
+    background-color: #4CAF50;
+  }
+  
+  .btn-danger {
+    background-color: #F44336;
+  }
+  
+  .btn-disabled {
+    opacity: 0.5;
+    background-color: #9EB0D9;
+    cursor: not-allowed;
+  }
+  
+  .btn-sm {
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+  
+  .btn-xs {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+  
+  .control-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Form elements */
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+  input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+  }
+  
+  .input-value, .input-weight {
+    width: 33%;
+  }
+  
+  /* Table styles */
+  .items-table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin-top: 8px;
+  }
+  
+  .items-table th, .matrix-table th {
+    padding: 8px;
+    text-align: left;
+    background-color: #E6F0FF;
+    font-weight: 600;
+  }
+  
+  .items-table td, .matrix-table td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Matrix table */
+  .matrix-table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+  }
+  
+  .considered-row {
+    font-weight: 500;
+  }
+  
+  .included-cell {
+    font-weight: bold;
+  }
+  
+  /* Edit panel */
+  .edit-panel {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #b8d0ef;
+  }
+  
+  .edit-panel h3 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2E4172;
+  }
+  
+  /* Start message */
+  .start-message {
+    text-align: center;
+    padding: 32px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #E6F0FF;
+    margin-bottom: 16px;
+  }
+  
+  .start-title {
+    font-size: 18px;
+    color: #2E4172;
+  }
+  
+  .start-subtitle {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  /* Solution visualization */
+  .solution-visualization {
+    margin-bottom: 16px;
+  }
+  
+  .matrix-container {
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+  
+  /* Stats display */
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .stat-box {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #E6F0FF;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2E4172;
+    margin-bottom: 4px;
+  }
+  
+  .stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E4172;
+  }
+  
+  .capacity-bar-container {
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  
+  .capacity-bar {
+    height: 100%;
+    background-color: #4169E1;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Explanation box */
+  .explanation-box {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #E6F0FF;
+  }
+  
+  .explanation-box h4 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2E4172;
+  }
+  
+  /* Solution summary */
+  .solution-summary {
+    margin-top: 16px;
+  }
+  
+  .solution-list {
+    margin: 8px 0;
+    padding-left: 20px;
+  }
+  
+  .solution-list li {
+    margin-bottom: 4px;
+  }
+  
+  .solution-note {
+    font-style: italic;
+    margin-top: 8px;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    background-color: #E6F0FF;
+  }
+  
+  .empty-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2E4172;
+  }
+  
+  .empty-subtitle {
+    margin-top: 8px;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 16px;
+    color: #666;
+  }
+  
+  /* Other elements */
+  .capacity-info {
+    margin-bottom: 8px;
+  }
+  
+  .items-container h3 {
+    font-weight: 600;
+    color: #2E4172;
+  }
+  
+  .no-items-message {
+    color: #777;
+    font-style: italic;
+  }

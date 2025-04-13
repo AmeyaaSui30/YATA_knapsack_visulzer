@@ -1,0 +1,150 @@
+.knT-app-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .knT-header {
+    margin-bottom: 20px;
+  }
+  
+  .knT-panel {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+  }
+  
+  .knT-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .knT-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .knT-btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .knT-btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .knT-btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .knT-btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .knT-btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .knT-form-group {
+    margin-bottom: 10px;
+  }
+  
+  .knT-input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .knT-input-value, .knT-input-weight {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .knT-items-container {
+    margin-top: 10px;
+  }
+  
+  .knT-items-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .knT-items-table th, .knT-items-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .knT-items-table th {
+    background: #007bff;
+    color: white;
+  }
+  
+  .knT-tree-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .knT-tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .knT-tree-level {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .knT-tree-node {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #ddd;
+    margin: 5px;
+  }
+  
+  .knT-tree-node.best-node {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .knT-tree-node .knT-node-title {
+    font-weight: bold;
+  }
+  
+  .knT-tree-node .knT-over-capacity {
+    color: red;
+  }
+  
+  .knT-tree-node .knT-optimal-solution {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .knT-empty-state {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .knT-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
